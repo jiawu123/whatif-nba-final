@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: whatif-nba-final
+    env: node
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "*"
