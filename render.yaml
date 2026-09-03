@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: whatif-nba-final
+    name: what-if-nba-final
     env: node
     plan: free
     buildCommand: pnpm install --frozen-lockfile && pnpm build
